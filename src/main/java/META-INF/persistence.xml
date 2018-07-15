@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="mypu">
+		    <class>spring.entity.Customer</class>
+		    <class>spring.entity.Employee</class>
+		    <class>spring.entity.Office</class>
+		    <class>spring.entity.OrderDetail</class>
+		    <class>spring.entity.OrderDetailPK</class>
+		    <class>spring.entity.Order</class>
+		    <class>spring.entity.Payment</class>
+		    <class>spring.entity.PaymentPK</class>
+		    <class>spring.entity.Role</class>
+		    <class>spring.entity.User</class>
+		    <class>spring.entity.ProductLine</class>
+		    <class>spring.entity.Product</class>
+		    <class>spring.entity.MailMessage</class>
+	</persistence-unit>
+</persistence>

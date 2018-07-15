@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="common" template="/WEB-INF/layout/classic.jsp">
+	    <put-attribute name="footer" value="/WEB-INF/partials/footer.jsp"></put-attribute>
+	</definition>
+
+	<definition name="index" extends="common">
+		<put-attribute name="title" value="Best Cars" />
+		<put-attribute name="content" value="/WEB-INF/views/index.jsp" />
+		<put-attribute name="current" value="index" />
+	</definition>
+	
+	<definition name="users" extends="common">	
+		<put-attribute name="title" value="Users" />			
+		<put-attribute name="content" value="/WEB-INF/views/users.jsp" />
+		<put-attribute name="current" value="users" />
+	</definition>
+	
+	<definition name="user-detail" extends="common">
+		<put-attribute name="title" value="User Detail" />		
+		<put-attribute name="content" value="/WEB-INF/views/user-detail.jsp" />
+		<put-attribute name="current" value="users" />
+	</definition>
+	
+	<definition name="account" extends="common">
+		<put-attribute name="title" value="User Account" />		
+		<put-attribute name="content" value="/WEB-INF/views/user-account.jsp" />
+		<put-attribute name="current" value="account" />
+	</definition>
+	
+	<definition name="user-register" extends="common">
+		<put-attribute name="title" value="User Registration" />		
+		<put-attribute name="content" value="/WEB-INF/views/user-register.jsp" />
+		<put-attribute name="current" value="register" />
+	</definition>
+	
+	<definition name="login" extends="common">
+		<put-attribute name="title" value="Login" />		
+		<put-attribute name="content" value="/WEB-INF/views/login.jsp" />
+		<put-attribute name="current" value="login" />
+	</definition>
+	
+	<definition name="customers" extends="common">
+		<put-attribute name="title" value="Customer Registration" />		
+		<put-attribute name="content" value="/WEB-INF/views/customers/customers.jsp" />
+		<put-attribute name="current" value="customers" />
+	</definition>
+	
+	<definition name="customer-create" extends="common">
+		<put-attribute name="title" value="Customer Creation" />		
+		<put-attribute name="content" value="/WEB-INF/views/customers/customer-create.jsp" />
+		<put-attribute name="current" value="customers" />
+	</definition>
+	
+	<definition name="customer-edit" extends="common">
+		<put-attribute name="title" value="Customer Edition" />		
+		<put-attribute name="content" value="/WEB-INF/views/customers/customer-edit.jsp" />
+		<put-attribute name="current" value="customers" />
+	</definition>
+	
+	<definition name="customer-show" extends="common">
+		<put-attribute name="title" value="Customer View" />		
+		<put-attribute name="content" value="/WEB-INF/views/customers/customer-show.jsp" />
+		<put-attribute name="current" value="customers" />
+	</definition>
+	
+	<definition name="employees" extends="common">
+		<put-attribute name="title" value="Employee Registration" />		
+		<put-attribute name="content" value="/WEB-INF/views/employees/employees.jsp" />
+		<put-attribute name="current" value="employees" />
+	</definition>
+	
+	<definition name="employee-create" extends="common">
+		<put-attribute name="title" value="Employee Creation" />		
+		<put-attribute name="content" value="/WEB-INF/views/employees/employee-create.jsp" />
+		<put-attribute name="current" value="employees" />
+	</definition>
+	
+	<definition name="employee-edit" extends="common">
+		<put-attribute name="title" value="Employee Edition" />		
+		<put-attribute name="content" value="/WEB-INF/views/employees/employee-edit.jsp" />
+		<put-attribute name="current" value="employees" />
+	</definition>
+	
+	<definition name="employee-show" extends="common">
+		<put-attribute name="title" value="Employee View" />		
+		<put-attribute name="content" value="/WEB-INF/views/employees/employee-show.jsp" />
+		<put-attribute name="current" value="employees" />
+	</definition>
+	
+	<definition name="offices" extends="common">
+		<put-attribute name="title" value="Office Registration" />		
+		<put-attribute name="content" value="/WEB-INF/views/offices/offices.jsp" />
+		<put-attribute name="current" value="offices" />
+	</definition>
+	
+	<definition name="office-create" extends="common">
+		<put-attribute name="title" value="Office Creation" />		
+		<put-attribute name="content" value="/WEB-INF/views/offices/office-create.jsp" />
+		<put-attribute name="current" value="offices" />
+	</definition>
+	
+	<definition name="office-edit" extends="common">
+		<put-attribute name="title" value="Office Edition" />		
+		<put-attribute name="content" value="/WEB-INF/views/offices/office-edit.jsp" />
+		<put-attribute name="current" value="offices" />
+	</definition>
+	
+	<definition name="office-show" extends="common">
+		<put-attribute name="title" value="Office View" />		
+		<put-attribute name="content" value="/WEB-INF/views/offices/office-show.jsp" />
+		<put-attribute name="current" value="offices" />
+	</definition>
+		
+	<definition name="orders" extends="common">
+		<put-attribute name="title" value="Order Registration" />		
+		<put-attribute name="content" value="/WEB-INF/views/orders/orders.jsp" />
+		<put-attribute name="current" value="orders" />
+	</definition>
+	
+	<definition name="order-create" extends="common">
+		<put-attribute name="title" value="Order Creation" />		
+		<put-attribute name="content" value="/WEB-INF/views/orders/order-create.jsp" />
+		<put-attribute name="current" value="orders" />
+	</definition>
+	
+	<definition name="order-edit" extends="common">
+		<put-attribute name="title" value="Order Edition" />		
+		<put-attribute name="content" value="/WEB-INF/views/orders/order-edit.jsp" />
+		<put-attribute name="current" value="orders" />
+	</definition>
+	
+	<definition name="order-show" extends="common">
+		<put-attribute name="title" value="Order View" />		
+		<put-attribute name="content" value="/WEB-INF/views/orders/order-show.jsp" />
+		<put-attribute name="current" value="orders" />
+    </definition>
+    
+   	<definition name="payments" extends="common">
+		<put-attribute name="title" value="Payment Registration" />		
+		<put-attribute name="content" value="/WEB-INF/views/payments/payments.jsp" />
+		<put-attribute name="current" value="payments" />
+	</definition>
+	
+	<definition name="payment-create" extends="common">
+		<put-attribute name="title" value="Payment Creation" />		
+		<put-attribute name="content" value="/WEB-INF/views/payments/payment-create.jsp" />
+		<put-attribute name="current" value="payments" />
+	</definition>
+	
+	<definition name="payment-edit" extends="common">
+		<put-attribute name="title" value="Payment Edition" />		
+		<put-attribute name="content" value="/WEB-INF/views/payments/payment-edit.jsp" />
+		<put-attribute name="current" value="payments" />
+	</definition>
+	
+	<definition name="payment-show" extends="common">
+		<put-attribute name="title" value="Payment View" />		
+		<put-attribute name="content" value="/WEB-INF/views/payments/payment-show.jsp" />
+		<put-attribute name="current" value="payments" />
+    </definition>
+    
+    <definition name="categories" extends="common">
+		<put-attribute name="title" value="Category Registration" />		
+		<put-attribute name="content" value="/WEB-INF/views/categories/categories.jsp" />
+		<put-attribute name="current" value="categories" />
+	</definition>
+	
+	<definition name="category-edit" extends="common">
+		<put-attribute name="title" value="Category Edition" />		
+		<put-attribute name="content" value="/WEB-INF/views/categories/category-edit.jsp" />
+		<put-attribute name="current" value="categories" />
+	</definition>
+	
+	<definition name="category-show" extends="common">
+		<put-attribute name="title" value="Category View" />		
+		<put-attribute name="content" value="/WEB-INF/views/categories/category-show.jsp" />
+		<put-attribute name="current" value="categories" />
+    </definition>
+    
+    <definition name="products" extends="common">
+		<put-attribute name="title" value="Product Registration" />		
+		<put-attribute name="content" value="/WEB-INF/views/products/products.jsp" />
+		<put-attribute name="current" value="products" />
+	</definition>
+    
+	<definition name="product-create" extends="common">
+		<put-attribute name="title" value="Product Creation" />		
+		<put-attribute name="content" value="/WEB-INF/views/products/product-create.jsp" />
+		<put-attribute name="current" value="products" />
+	</definition>
+	
+	<definition name="product-edit" extends="common">
+		<put-attribute name="title" value="Product Edition" />		
+		<put-attribute name="content" value="/WEB-INF/views/products/product-edit.jsp" />
+		<put-attribute name="current" value="products" />
+	</definition>
+	
+	<definition name="product-show" extends="common">
+		<put-attribute name="title" value="Product View" />		
+		<put-attribute name="content" value="/WEB-INF/views/products/product-show.jsp" />
+		<put-attribute name="current" value="products" />
+    </definition>
+    
+    <definition name="orderdetails" extends="common">
+		<put-attribute name="title" value="Order Detail Registration" />		
+		<put-attribute name="content" value="/WEB-INF/views/orderdetails/orderdetails.jsp" />
+		<put-attribute name="current" value="orderdetails" />
+	</definition>
+    
+	<definition name="orderdetail-create" extends="common">
+		<put-attribute name="title" value="Order Detail Creation" />		
+		<put-attribute name="content" value="/WEB-INF/views/orderdetails/orderdetail-create.jsp" />
+		<put-attribute name="current" value="orderdetails" />
+	</definition>
+	
+	<definition name="orderdetail-edit" extends="common">
+		<put-attribute name="title" value="Order Detail Edition" />		
+		<put-attribute name="content" value="/WEB-INF/views/orderdetails/orderdetail-edit.jsp" />
+		<put-attribute name="current" value="orderdetails" />
+	</definition>
+	
+	<definition name="orderdetail-show" extends="common">
+		<put-attribute name="title" value="Order Detail View" />		
+		<put-attribute name="content" value="/WEB-INF/views/orderdetails/orderdetail-show.jsp" />
+		<put-attribute name="current" value="orderdetails" />
+    </definition>
+    
+    <definition name="messages" extends="common">
+		<put-attribute name="title" value="Message Edition" />		
+		<put-attribute name="content" value="/WEB-INF/views/messages/messages.jsp" />
+		<put-attribute name="current" value="messages" />
+	</definition>	
+		
+	<definition name="message-create" extends="common">
+		<put-attribute name="title" value="Contact Page" />
+		<put-attribute name="content" value="/WEB-INF/views/messages/message-create.jsp" />
+		<put-attribute name="current" value="contact" />
+	</definition>
+    	
+	<definition name="message-edit" extends="common">
+		<put-attribute name="title" value="Message Edition" />		
+		<put-attribute name="content" value="/WEB-INF/views/messages/message-edit.jsp" />
+		<put-attribute name="current" value="messages" />
+	</definition>
+	
+	<definition name="message-show" extends="common">
+		<put-attribute name="title" value="Message View" />		
+		<put-attribute name="content" value="/WEB-INF/views/messages/message-show.jsp" />
+		<put-attribute name="current" value="messages" />
+    </definition>
+    
+    <definition name="items" extends="common">
+		<put-attribute name="title" value="Message Edition" />		
+		<put-attribute name="content" value="/WEB-INF/views/items/items.jsp" />
+		<put-attribute name="current" value="items" />
+	</definition>
+    
+</tiles-definitions>
